@@ -1,11 +1,11 @@
 [Unit]
-Description=Flask App server by Gunicorn on port 8000
+Description=Flask App served by Gunicorn on port 8000
 After=network.target
 
 [Service]
 User=flask
 Group=www-data
-WorkingDirectory=/opt/app
+WorkingDirectory=/opt/geld/app
 ExecStart=/usr/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 -m 007 wsgi:app
 
 [Install]
