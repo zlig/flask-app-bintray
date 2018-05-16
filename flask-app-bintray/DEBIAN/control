@@ -1,6 +1,6 @@
 Package: __PACKAGE_NAME__
 Version: __VERSION__
-Depends: bash, python, python-flask
+Depends: bash, python, python-flask, gunicorn
 Architecture: all
 Maintainer: __USER__
 Description: Python Flask web application in a Debian .deb package using Travis and upload to Bintray (Build date: __DATE__)
