@@ -7,7 +7,8 @@
 	
 	"version": {
 		"name": "__VERSION__",
-		"desc": "__NAME__ __VERSION__ by __SUBJECT__"
+		"desc": "__NAME__ __VERSION__ by __SUBJECT__",
+		"gpgSign": true
 	},
 
 	"licenses": ["__LICENSE__"],
@@ -19,7 +20,7 @@
 			"includePattern": "./(.[^/]*(\\.deb)$)",
 			"uploadPattern": "$1",
 			"matrixParams": {
-				"deb_distribution": "unstable",
+				"deb_distribution": "xenial",
 				"deb_component": "main",
 				"deb_architecture": "amd64"
 			}
